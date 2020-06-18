@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="heK-nm-GCv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4tE-72-AMR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6I-DT-2jz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="heK-nm-GCv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kdM-3n-lkh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.96638795664767319" blue="0.94720426659672052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.89494431019999998" green="0.39065405730000002" blue="0.20865741369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="o9R-8E-fB1" kind="relationship" relationship="rootViewController" id="txQ-q7-MWx"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-6448" y="375"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="EzA-gd-lv2">
+            <objects>
+                <viewController id="o9R-8E-fB1" customClass="TimerTeaViewController" customModule="ChaDaTarde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WTS-oN-77c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6i-Xz-sk6">
+                                <rect key="frame" x="115" y="451" width="184" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" red="0.89494431019999998" green="0.39065405730000002" blue="0.20865741369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7o-yD-J5f">
+                                <rect key="frame" x="166" y="601" width="83" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89494431019999998" green="0.39065405730000002" blue="0.20865741369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Zerar">
+                                    <color key="titleColor" red="0.97818619009999996" green="0.91042476890000001" blue="0.85974353550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopInfusionTapped:" destination="o9R-8E-fB1" eventType="touchUpInside" id="8j8-2f-Hbz"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teaInfusion" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-y2-wR4">
+                                <rect key="frame" x="60" y="109" width="295" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8D-9g-mMB">
+                                <rect key="frame" x="115" y="536" width="184" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89411764705882346" green="0.39065405730000002" blue="0.20865741369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="tintColor" red="0.97818619009999996" green="0.91042476890000001" blue="0.85974353550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="-17" minY="0.0" maxX="0.0" maxY="-3"/>
+                                <state key="normal" title="Infusionar!" image="play" catalog="system">
+                                    <color key="titleColor" red="0.97818619009999996" green="0.91042476890000001" blue="0.85974353550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goInfusionTapped:" destination="o9R-8E-fB1" eventType="touchUpInside" id="Sjb-uH-dOx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96505111460000004" blue="0.93963748219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="jCR-ns-Xld"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Inicio" id="0Sg-9d-lS6">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="eMR-2H-igw">
+                            <color key="tintColor" red="0.89494431019999998" green="0.39065405730000002" blue="0.20865741369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="configTapped:" destination="o9R-8E-fB1" id="YQf-x2-71O"/>
+                                <segue destination="y86-Q4-QhJ" kind="presentation" identifier="ConfigModal" id="SF1-zC-VDh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="goInfusion" destination="h8D-9g-mMB" id="yMY-Fq-Gc3"/>
+                        <outlet property="stopInfusion" destination="d7o-yD-J5f" id="sEd-GU-F3c"/>
+                        <outlet property="timerLabel" destination="F6i-Xz-sk6" id="MUB-HN-BTl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTj-KF-WI2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5362" y="375"/>
+        </scene>
+        <!--Configurations-->
+        <scene sceneID="MVh-C2-dOK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Configurations" id="y86-Q4-QhJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1c-in-jJP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4796" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="play" catalog="system" width="120" height="128"/>
+        <image name="teaInfusion" width="800" height="600"/>
+    </resources>
+</document>
